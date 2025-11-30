@@ -60,6 +60,7 @@
     "@douyinfe/semi-icons": "^2.88.3",
     "@douyinfe/semi-ui": "2.88.3",
     "@sendgrid/mail": "8.1.6",
+    "dotenv": "^16.4.5",
     "@visactor/react-vchart": "^2.0.9",
     "@visactor/vchart": "^2.0.9",
     "@visactor/vchart-semi-theme": "^1.12.2",
