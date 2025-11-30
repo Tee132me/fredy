@@ -164,23 +164,11 @@ function replaceEnvPlaceholders(obj) {
     await import('./lib/api/api.js');
     logger.info('✅ Fredy UI API initialized');
 
-    // Initialize REST API for external integrations (MyImmoBuddy)
+    // External REST API for MyImmoBuddy integration is loaded via api.js
     if (process.env.API_ENABLED === 'true') {
-      try {
-        logger.info('🔄 Loading REST API routes...');
-        // Note: api-routes.js uses CommonJS, so we need to use createRequire
-        import { createRequire } from 'module';
-        const require = createRequire(import.meta.url);
-        const apiRoutes = require('./api-routes.js');
-        
-        // Get the Express app instance from Fredy's API
-        // This is a workaround - ideally api-routes.js should be converted to ES modules
-        logger.info('✅ REST API routes loaded (available at /api/*)');
-      } catch (error) {
-        logger.warn('⚠️  REST API routes not loaded. If you need REST API, ensure api-routes.js exists:', error.message);
-      }
+      logger.info('✅ External REST API enabled (available at /api/external/*)');
     } else {
-      logger.info('ℹ️  REST API disabled (set API_ENABLED=true to enable)');
+      logger.info('ℹ️  External REST API disabled (set API_ENABLED=true to enable)');
     }
 
     if (config.demoMode) {

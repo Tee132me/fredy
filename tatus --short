@@ -1,0 +1,31 @@
+[1mdiff --git a/index.js b/index.js[m
+[1mindex c7df7be..6f796ed 100644[m
+[1m--- a/index.js[m
+[1m+++ b/index.js[m
+[36m@@ -164,23 +164,11 @@[m [mfunction replaceEnvPlaceholders(obj) {[m
+     await import('./lib/api/api.js');[m
+     logger.info('✅ Fredy UI API initialized');[m
+ [m
+[31m-    // Initialize REST API for external integrations (MyImmoBuddy)[m
+[32m+[m[32m    // External REST API for MyImmoBuddy integration is loaded via api.js[m
+     if (process.env.API_ENABLED === 'true') {[m
+[31m-      try {[m
+[31m-        logger.info('🔄 Loading REST API routes...');[m
+[31m-        // Note: api-routes.js uses CommonJS, so we need to use createRequire[m
+[31m-        import { createRequire } from 'module';[m
+[31m-        const require = createRequire(import.meta.url);[m
+[31m-        const apiRoutes = require('./api-routes.js');[m
+[31m-        [m
+[31m-        // Get the Express app instance from Fredy's API[m
+[31m-        // This is a workaround - ideally api-routes.js should be converted to ES modules[m
+[31m-        logger.info('✅ REST API routes loaded (available at /api/*)');[m
+[31m-      } catch (error) {[m
+[31m-        logger.warn('⚠️  REST API routes not loaded. If you need REST API, ensure api-routes.js exists:', error.message);[m
+[31m-      }[m
+[32m+[m[32m      logger.info('✅ External REST API enabled (available at /api/external/*)');[m
+     } else {[m
+[31m-      logger.info('ℹ️  REST API disabled (set API_ENABLED=true to enable)');[m
+[32m+[m[32m      logger.info('ℹ️  External REST API disabled (set API_ENABLED=true to enable)');[m
+     }[m
+ [m
+     if (config.demoMode) {[m
