@@ -176,7 +176,9 @@ function replaceEnvPlaceholders(obj) {
       cleanupDemoAtMidnight();
     }
 
-    logger.info(`Started Fredy successfully. UI can be accessed via http://localhost:${config.port}`);
+    // Use PORT from environment (Railway/production) or config
+    const actualPort = process.env.PORT || config.port || 9998;
+    logger.info(`Started Fredy successfully. UI can be accessed via http://localhost:${actualPort}`);
 
     ensureAdminUserExists();
     ensureDemoUserExists();
@@ -234,6 +236,7 @@ function replaceEnvPlaceholders(obj) {
                 ).execute();
               } catch (error) {
                 logger.error(`Error executing pipeline for provider ${prov.id} in job ${job.id}:`, error);
+                // Don't throw - let other providers continue even if one fails
               }
             });
           }

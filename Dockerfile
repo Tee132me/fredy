@@ -14,10 +14,10 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
 # Copy lockfiles first to leverage cache for dependencies
 COPY package.json yarn.lock .
 
-# Set Yarn timeout, install dependencies and PM2 globally
+# Set Yarn timeout and install dependencies
+# PM2 removed to prevent EAGAIN errors in containerized environments
 RUN yarn config set network-timeout 600000 \
-  && yarn --frozen-lockfile \
-  && yarn global add pm2
+  && yarn --frozen-lockfile
 
 # Copy application source and build production assets
 COPY . .
@@ -35,5 +35,7 @@ EXPOSE 9998
 # VOLUME /db
 # VOLUME /conf
 
-# Start application using PM2 runtime
-CMD ["pm2-runtime", "index.js"]
+# Start application directly with Node.js (no PM2) to avoid EAGAIN errors
+# Use NODE_ENV=production and set memory limits for Railway
+ENV NODE_ENV=production
+CMD ["node", "--max-old-space-size=512", "index.js"]
