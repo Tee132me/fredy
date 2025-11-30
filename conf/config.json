@@ -29,7 +29,7 @@
     {
       "id": "north_apartments",
       "name": "NORTH GERMANY - APARTMENTS (Hamburg, Bremen-Area, Hannover)",
-      "enabled": true,
+      "enabled": false,
       "interval": 20,
       "provider": [
         { "id": "immoscout", "url": "https://www.immobilienscout24.de/Suche/radius/wohnung-mieten?centerofsearchaddress=Hamburg%3B%3B%3B%3B%3B%3B&geocoordinates=53.55384%3B9.99165%3B50.0&sorting=2&enteredFrom=result_list" },
@@ -50,7 +50,7 @@
     {
       "id": "north_houses",
       "name": "NORTH GERMANY - HOUSES (Hamburg, Bremen, Hannover)",
-      "enabled": true,
+      "enabled": false,
       "interval": 25,
       "provider": [
         { "id": "immoscout", "url": "PASTE_IMMOSCOUT_HAMBURG_HAUS_50KM_URL" },
@@ -71,7 +71,7 @@
     {
       "id": "east_apartments",
       "name": "EAST GERMANY - APARTMENTS (Berlin, Leipzig, Dresden)",
-      "enabled": true,
+      "enabled": false,
       "interval": 20,
       "provider": [
         { "id": "immoscout", "url": "PASTE_IMMOSCOUT_BERLIN_WOHNUNG_50KM_URL" },
@@ -92,7 +92,7 @@
     {
       "id": "east_houses",
       "name": "EAST GERMANY - HOUSES (Berlin, Leipzig, Dresden)",
-      "enabled": true,
+      "enabled": false,
       "interval": 25,
       "provider": [
         { "id": "immoscout", "url": "PASTE_IMMOSCOUT_BERLIN_HAUS_50KM_URL" },
@@ -113,7 +113,7 @@
     {
       "id": "west_apartments",
       "name": "WEST GERMANY - APARTMENTS (Cologne, Frankfurt, Dortmund)",
-      "enabled": true,
+      "enabled": false,
       "interval": 22,
       "provider": [
         { "id": "immoscout", "url": "PASTE_IMMOSCOUT_COLOGNE_WOHNUNG_50KM_URL" },
@@ -134,7 +134,7 @@
     {
       "id": "west_houses",
       "name": "WEST GERMANY - HOUSES (Cologne, Frankfurt, Dortmund)",
-      "enabled": true,
+      "enabled": false,
       "interval": 25,
       "provider": [
         { "id": "immoscout", "url": "PASTE_IMMOSCOUT_COLOGNE_HAUS_50KM_URL" },
@@ -155,7 +155,7 @@
     {
       "id": "south_apartments",
       "name": "SOUTH GERMANY - APARTMENTS (Munich, Stuttgart, Nuremberg)",
-      "enabled": true,
+      "enabled": false,
       "interval": 20,
       "provider": [
         { "id": "immoscout", "url": "PASTE_IMMOSCOUT_MUNICH_WOHNUNG_50KM_URL" },
@@ -176,7 +176,7 @@
     {
       "id": "south_houses",
       "name": "SOUTH GERMANY - HOUSES (Munich, Stuttgart, Nuremberg)",
-      "enabled": true,
+      "enabled": false,
       "interval": 25,
       "provider": [
         { "id": "immoscout", "url": "PASTE_IMMOSCOUT_MUNICH_HAUS_50KM_URL" },
