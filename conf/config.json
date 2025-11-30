@@ -1,0 +1,198 @@
+{
+  "interval": 120,
+  "adapters": [
+    {
+      "type": "telegram",
+      "botToken": "${BOT_TOKEN}",
+      "chatId": "${RAW_FEED_CHANNEL_ID}"
+    }
+  ],
+  "providers": [
+    {
+      "id": "immoscout",
+      "name": "ImmobilienScout24"
+    },
+    {
+      "id": "immonet",
+      "name": "ImmoNet"
+    },
+    {
+      "id": "kleinanzeigen",
+      "name": "eBay Kleinanzeigen"
+    },
+    {
+      "id": "wg-gesucht",
+      "name": "WG-Gesucht"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "north_apartments",
+      "name": "NORTH GERMANY - APARTMENTS (Hamburg, Bremen-Area, Hannover)",
+      "enabled": true,
+      "interval": 20,
+      "provider": [
+        { "id": "immoscout", "url": "https://www.immobilienscout24.de/Suche/radius/wohnung-mieten?centerofsearchaddress=Hamburg%3B%3B%3B%3B%3B%3B&geocoordinates=53.55384%3B9.99165%3B50.0&sorting=2&enteredFrom=result_list" },
+        { "id": "immoscout", "url": "https://www.immobilienscout24.de/Suche/radius/wohnung-mieten?centerofsearchaddress=Delmenhorst;;;;;;&geocoordinates=53.05175;8.63325;50.0&sorting=2&enteredFrom=result_list" },
+        { "id": "immoscout", "url": "https://www.immobilienscout24.de/Suche/radius/wohnung-mieten?centerofsearchaddress=Hannover;;;;;;&geocoordinates=52.37207;9.73568;50.0&sorting=2&enteredFrom=result_list" },
+        { "id": "immonet", "url": "PASTE_IMMONET_HAMBURG_WOHNUNG_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_BREMEN_WOHNUNG_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_HANNOVER_WOHNUNG_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_HAMBURG_WOHNUNG_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_BREMEN_WOHNUNG_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_HANNOVER_WOHNUNG_50KM_URL" },
+        { "id": "wg-gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Hamburg.55.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=55&sort_order=0&noDeact=1&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&radDis=50000" },
+        { "id": "wg-gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Bremen.17.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=17&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Bremen+%28Bremen%29&country_code=de&city_name=Bremen&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wg-gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Hannover.57.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=57&sort_column=0&sort_order=0&noDeact=1&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&radDis=50000" }
+      ],
+      "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
+    },
+    {
+      "id": "north_houses",
+      "name": "NORTH GERMANY - HOUSES (Hamburg, Bremen, Hannover)",
+      "enabled": true,
+      "interval": 25,
+      "provider": [
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_HAMBURG_HAUS_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_BREMEN_HAUS_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_HANNOVER_HAUS_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_HAMBURG_HAUS_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_BREMEN_HAUS_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_HANNOVER_HAUS_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_HAMBURG_HAUS_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_BREMEN_HAUS_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_HANNOVER_HAUS_50KM_URL" },
+        { "id": "wg-gesucht", "url": "PASTE_WGGESUCHT_HAMBURG_HAUS_50KM_URL" },
+        { "id": "wg-gesucht", "url": "PASTE_WGGESUCHT_BREMEN_HAUS_50KM_URL" },
+        { "id": "wg-gesucht", "url": "PASTE_WGGESUCHT_HANNOVER_HAUS_50KM_URL" }
+      ],
+      "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
+    },
+    {
+      "id": "east_apartments",
+      "name": "EAST GERMANY - APARTMENTS (Berlin, Leipzig, Dresden)",
+      "enabled": true,
+      "interval": 20,
+      "provider": [
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_BERLIN_WOHNUNG_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_LEIPZIG_WOHNUNG_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_DRESDEN_WOHNUNG_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_BERLIN_WOHNUNG_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_LEIPZIG_WOHNUNG_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_DRESDEN_WOHNUNG_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_BERLIN_WOHNUNG_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_LEIPZIG_WOHNUNG_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_DRESDEN_WOHNUNG_50KM_URL" },
+        { "id": "wg-gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Berlin.8.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=8&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Berlin+%28Berlin%29&country_code=de&city_name=Berlin&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wg-gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Leipzig.77.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=77&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Leipzig+%28Sachsen%29&country_code=de&city_name=Leipzig&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wg-gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Dresden.27.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=27&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Dresden+%28Sachsen%29&country_code=de&city_name=Dresden&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" }
+      ],
+      "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
+    },
+    {
+      "id": "east_houses",
+      "name": "EAST GERMANY - HOUSES (Berlin, Leipzig, Dresden)",
+      "enabled": true,
+      "interval": 25,
+      "provider": [
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_BERLIN_HAUS_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_LEIPZIG_HAUS_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_DRESDEN_HAUS_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_BERLIN_HAUS_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_LEIPZIG_HAUS_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_DRESDEN_HAUS_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_BERLIN_HAUS_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_LEIPZIG_HAUS_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_DRESDEN_HAUS_50KM_URL" },
+        { "id": "wg-gesucht", "url": "PASTE_WGGESUCHT_BERLIN_HAUS_50KM_URL" },
+        { "id": "wg-gesucht", "url": "PASTE_WGGESUCHT_LEIPZIG_HAUS_50KM_URL" },
+        { "id": "wg-gesucht", "url": "PASTE_WGGESUCHT_DRESDEN_HAUS_50KM_URL" }
+      ],
+      "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
+    },
+    {
+      "id": "west_apartments",
+      "name": "WEST GERMANY - APARTMENTS (Cologne, Frankfurt, Dortmund)",
+      "enabled": true,
+      "interval": 22,
+      "provider": [
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_COLOGNE_WOHNUNG_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_FRANKFURT_WOHNUNG_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_DORTMUND_WOHNUNG_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_COLOGNE_WOHNUNG_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_FRANKFURT_WOHNUNG_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_DORTMUND_WOHNUNG_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_COLOGNE_WOHNUNG_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_FRANKFURT_WOHNUNG_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_DORTMUND_WOHNUNG_50KM_URL" },
+        { "id": "wg-gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Koeln.73.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=73&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=K%C3%B6ln+%28Nordrhein-Westfalen%29&country_code=de&city_name=Koeln&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wg-gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Frankfurt-am-Main.41.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=41&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Frankfurt+am+Main+%28Hessen%29&country_code=de&city_name=Frankfurt-am-Main&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wg-gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Dortmund.26.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=26&sort_column=0&sort_order=0&noDeact=1&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&radDis=50000" }
+      ],
+      "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
+    },
+    {
+      "id": "west_houses",
+      "name": "WEST GERMANY - HOUSES (Cologne, Frankfurt, Dortmund)",
+      "enabled": true,
+      "interval": 25,
+      "provider": [
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_COLOGNE_HAUS_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_FRANKFURT_HAUS_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_DORTMUND_HAUS_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_COLOGNE_HAUS_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_FRANKFURT_HAUS_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_DORTMUND_HAUS_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_COLOGNE_HAUS_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_FRANKFURT_HAUS_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_DORTMUND_HAUS_50KM_URL" },
+        { "id": "wg-gesucht", "url": "PASTE_WGGESUCHT_COLOGNE_HAUS_50KM_URL" },
+        { "id": "wg-gesucht", "url": "PASTE_WGGESUCHT_FRANKFURT_HAUS_50KM_URL" },
+        { "id": "wg-gesucht", "url": "PASTE_WGGESUCHT_DORTMUND_HAUS_50KM_URL" }
+      ],
+      "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
+    },
+    {
+      "id": "south_apartments",
+      "name": "SOUTH GERMANY - APARTMENTS (Munich, Stuttgart, Nuremberg)",
+      "enabled": true,
+      "interval": 20,
+      "provider": [
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_MUNICH_WOHNUNG_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_STUTTGART_WOHNUNG_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_NUREMBERG_WOHNUNG_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_MUNICH_WOHNUNG_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_STUTTGART_WOHNUNG_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_NUREMBERG_WOHNUNG_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_MUNICH_WOHNUNG_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_STUTTGART_WOHNUNG_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_NUREMBERG_WOHNUNG_50KM_URL" },
+        { "id": "wg-gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Muenchen.90.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=90&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=M%C3%BCnchen+%28Bayern%29&country_code=de&city_name=Muenchen&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wg-gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Stuttgart.124.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=124&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Stuttgart+%28Baden-W%C3%BCrttemberg%29&country_code=de&city_name=Stuttgart&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wg-gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Nuernberg.96.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=96&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=N%C3%BCrnberg+%28Bayern%29&country_code=de&city_name=Nuernberg&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" }
+      ],
+      "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
+    },
+    {
+      "id": "south_houses",
+      "name": "SOUTH GERMANY - HOUSES (Munich, Stuttgart, Nuremberg)",
+      "enabled": true,
+      "interval": 25,
+      "provider": [
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_MUNICH_HAUS_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_STUTTGART_HAUS_50KM_URL" },
+        { "id": "immoscout", "url": "PASTE_IMMOSCOUT_NUREMBERG_HAUS_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_MUNICH_HAUS_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_STUTTGART_HAUS_50KM_URL" },
+        { "id": "immonet", "url": "PASTE_IMMONET_NUREMBERG_HAUS_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_MUNICH_HAUS_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_STUTTGART_HAUS_50KM_URL" },
+        { "id": "kleinanzeigen", "url": "PASTE_KLEINANZEIGEN_NUREMBERG_HAUS_50KM_URL" },
+        { "id": "wg-gesucht", "url": "PASTE_WGGESUCHT_MUNICH_HAUS_50KM_URL" },
+        { "id": "wg-gesucht", "url": "PASTE_WGGESUCHT_STUTTGART_HAUS_50KM_URL" },
+        { "id": "wg-gesucht", "url": "PASTE_WGGESUCHT_NUREMBERG_HAUS_50KM_URL" }
+      ],
+      "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
+    }
+  ]
+}
