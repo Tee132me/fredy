@@ -15,6 +15,7 @@ import { initTrackerCron } from './lib/services/crons/tracker-cron.js';
 import logger from './lib/services/logger.js';
 import { bus } from './lib/services/events/event-bus.js';
 import { initActiveCheckerCron } from './lib/services/crons/listing-alive-cron.js';
+import { initConfigJobSync } from './lib/services/configSync/configJobSync.js';
 
 const parsePositiveInt = (value) => {
   if (value == null) {
@@ -183,6 +184,11 @@ function replaceEnvPlaceholders(obj) {
     ensureAdminUserExists();
     ensureDemoUserExists();
     logger.info('✅ User accounts ensured');
+
+    // Sync jobs from config.json to database
+    logger.info('🔄 Syncing jobs from config.json to database...');
+    await initConfigJobSync();
+    logger.info('✅ Config job sync initialized');
 
     logger.info('🔄 Initializing tracker cron...');
     await initTrackerCron();
