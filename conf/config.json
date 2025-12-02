@@ -25,7 +25,7 @@
       "name": "eBay Kleinanzeigen"
     },
     {
-      "id": "Wg gesucht",
+      "id": "wgGesucht",
       "name": "WG-Gesucht"
     }
   ],
@@ -48,9 +48,9 @@
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/hamburg/sortierung:neuste/wohnung/k0c195l9409r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/delmenhorst/sortierung:neuste/wohnung/k0c195l2466r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/hannover/sortierung:neuste/wohnung/k0c195l3155r50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Hamburg.55.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=55&sort_order=0&noDeact=1&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&radDis=50000" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Bremen.17.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=17&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Bremen+%28Bremen%29&country_code=de&city_name=Bremen&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Hannover.57.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=57&sort_column=0&sort_order=0&noDeact=1&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&radDis=50000" }
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Hamburg.55.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=55&sort_order=0&noDeact=1&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&radDis=50000" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Bremen.17.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=17&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Bremen+%28Bremen%29&country_code=de&city_name=Bremen&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Hannover.57.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=57&sort_column=0&sort_order=0&noDeact=1&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&radDis=50000" }
       ],
       "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
     },
@@ -72,9 +72,9 @@
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/hamburg/sortierung:neuste/haus-mieten/k0c195l9409r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/delmenhorst/sortierung:neuste/haus-mieten/k0c195l2466r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/hannover/sortierung:neuste/haus-mieten/k0c195l3155r50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Hamburg.55.3.1.0.html?kilometer=50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Bremen.17.3.1.0.html?kilometer=50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Hannover.57.3.1.0.html?kilometer=50" }
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Hamburg.55.3.1.0.html?kilometer=50" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Bremen.17.3.1.0.html?kilometer=50" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Hannover.57.3.1.0.html?kilometer=50" }
       ],
       "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
     },
@@ -96,9 +96,9 @@
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/berlin/sortierung:neuste/wohnung-mieten/k0c195l3331r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/leipzig/sortierung:neuste/wohnung-mieten/k0c195l4233r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/dresden/sortierung:neuste/wohnung-mieten/k0c195l3820r50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Berlin.8.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=8&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Berlin+%28Berlin%29&country_code=de&city_name=Berlin&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Leipzig.77.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=77&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Leipzig+%28Sachsen%29&country_code=de&city_name=Leipzig&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Dresden.27.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=27&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Dresden+%28Sachsen%29&country_code=de&city_name=Dresden&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" }
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Berlin.8.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=8&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Berlin+%28Berlin%29&country_code=de&city_name=Berlin&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Leipzig.77.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=77&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Leipzig+%28Sachsen%29&country_code=de&city_name=Leipzig&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Dresden.27.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=27&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Dresden+%28Sachsen%29&country_code=de&city_name=Dresden&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" }
       ],
       "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
     },
@@ -120,9 +120,9 @@
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/berlin/sortierung:neuste/haus-mieten/k0c195l3331r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/dresden/sortierung:neuste/haus-mieten/k0c195l3820r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/dresden/sortierung:neuste/haus-mieten/k0c195l3820r50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Berlin.8.3.1.0.html?kilometer=50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Leipzig.77.3.1.0.html?kilometer=50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Dresden.27.3.1.0.html?kilometer=50" }
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Berlin.8.3.1.0.html?kilometer=50" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Leipzig.77.3.1.0.html?kilometer=50" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Dresden.27.3.1.0.html?kilometer=50" }
       ],
       "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
     },
@@ -144,9 +144,9 @@
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/koeln/sortierung:neuste/wohnung-mieten/k0c195l945r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/frankfurt-am-main/sortierung:neuste/wohnung-mieten/k0c195l4292r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/dortmund/sortierung:neuste/wohnung-mieten/k0c195l1085r50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Koeln.73.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=73&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=K%C3%B6ln+%28Nordrhein-Westfalen%29&country_code=de&city_name=Koeln&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Frankfurt-am-Main.41.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=41&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Frankfurt+am+Main+%28Hessen%29&country_code=de&city_name=Frankfurt-am-Main&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Dortmund.26.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=26&sort_column=0&sort_order=0&noDeact=1&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&radDis=50000" }
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Koeln.73.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=73&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=K%C3%B6ln+%28Nordrhein-Westfalen%29&country_code=de&city_name=Koeln&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Frankfurt-am-Main.41.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=41&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Frankfurt+am+Main+%28Hessen%29&country_code=de&city_name=Frankfurt-am-Main&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Dortmund.26.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=26&sort_column=0&sort_order=0&noDeact=1&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&radDis=50000" }
       ],
       "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
     },
@@ -168,9 +168,9 @@
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/koeln/sortierung:neuste/haus-mieten/k0c195l945r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/frankfurt-am-main/sortierung:neuste/haus-mieten/k0c195l4292r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/dortmund/sortierung:neuste/haus-mieten/k0c195l1085r50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Koeln.73.3.1.0.html?kilometer=50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Frankfurt-am-Main.41.3.1.0.html?kilometer=50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Dortmund.26.3.1.0.html?kilometer=50" }
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Koeln.73.3.1.0.html?kilometer=50" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Frankfurt-am-Main.41.3.1.0.html?kilometer=50" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Dortmund.26.3.1.0.html?kilometer=50" }
       ],
       "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
     },
@@ -192,9 +192,9 @@
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/muenchen/sortierung:neuste/wohnung-mieten/k0c195l6411r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/stuttgart/sortierung:neuste/wohnung-mieten/k0c195l9280r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/nuerburg/sortierung:neuste/wohnung-mieten/k0c195l19723r50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Muenchen.90.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=90&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=M%C3%BCnchen+%28Bayern%29&country_code=de&city_name=Muenchen&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Stuttgart.124.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=124&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Stuttgart+%28Baden-W%C3%BCrttemberg%29&country_code=de&city_name=Stuttgart&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Nuernberg.96.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=96&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=N%C3%BCrnberg+%28Bayern%29&country_code=de&city_name=Nuernberg&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" }
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Muenchen.90.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=90&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=M%C3%BCnchen+%28Bayern%29&country_code=de&city_name=Muenchen&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Stuttgart.124.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=124&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=Stuttgart+%28Baden-W%C3%BCrttemberg%29&country_code=de&city_name=Stuttgart&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/wg-zimmer-und-1-zimmer-wohnungen-und-wohnungen-in-Nuernberg.96.0+1+2.1.0.html?csrf_token=ffe64e7b469376cadee2a2da69288dcc0433e847&offer_filter=1&city_id=96&sort_column=0&sort_order=0&noDeact=1&dFr=&dTo=&radLat=&radLng=&clear_vu=&autocompinp=N%C3%BCrnberg+%28Bayern%29&country_code=de&city_name=Nuernberg&categories%5B%5D=0&categories%5B%5D=1&categories%5B%5D=2&sMin=&rMax=&pu=&hidden_dFrDe=&hidden_dToDe=&radAdd=&radDis=50000&wgSea=&wgMnF=&wgMxT=&wgAge=&wgSmo=&rmMin=&rmMax=&fur=&pet=&pets_present=&sin=&exc=&kit=&flo=" }
       ],
       "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
     },
@@ -216,9 +216,9 @@
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/muenchen/sortierung:neuste/haus-mieten/k0c195l6411r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/stuttgart/sortierung:neuste/haus-mieten/k0c195l9280r50" },
         { "id": "kleinanzeigen", "url": "https://www.kleinanzeigen.de/s-immobilien/nuerburg/sortierung:neuste/haus-mieten/k0c195l19723r50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Muenchen.90.3.1.0.html?kilometer=50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Stuttgart.124.3.1.0.html?kilometer=50" },
-        { "id": "Wg gesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Nuernberg.96.3.1.0.html?kilometer=50" }
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Muenchen.90.3.1.0.html?kilometer=50" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Stuttgart.124.3.1.0.html?kilometer=50" },
+        { "id": "wgGesucht", "url": "https://www.wg-gesucht.de/haeuser-in-Nuernberg.96.3.1.0.html?kilometer=50" }
       ],
       "notificationAdapter": [{ "id": "telegram", "args": { "token": "${BOT_TOKEN}", "chatId": "${RAW_FEED_CHANNEL_ID}" } }]
     }
